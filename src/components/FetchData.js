@@ -23,7 +23,7 @@
 // export default FetchData;
 
 import React, { useEffect, useState } from "react";
-import UseDebounce from "./UseDebounce";
+import UseDebounce from "./CustomeHooks/UseDebounce";
 
 // const useDebounce = (value, delay) => {
 //   const [debouncedValue, setDebouncedValue] = useState(value);
