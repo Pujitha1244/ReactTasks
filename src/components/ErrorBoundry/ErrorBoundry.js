@@ -16,10 +16,11 @@ class ErrorBoundry extends Component {
 
   render() {
     if (this.state.hasError) {
-      return <h2>Something went wronf</h2>;
+      return <h2>Something went wrong</h2>;
     }
     return this.props.children;
   }
 }
 
 export default ErrorBoundry;
+

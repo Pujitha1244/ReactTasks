@@ -7,7 +7,7 @@ import UseContextHook from "./components/UseContextHook";
 import LoginDataContext from "./components/Context/loginDataContext";
 import UseRefHook from "./components/UseRefHook";
 import UseReducerHook from "./components/UseReducerHook";
-import FetchData from "./components/FetchData";
+import FetchData from "./components/Apps/FetchData";
 import Parent from "./components/ChildToParent";
 import UseMemoHook from "./components/UseMemoHook";
 import UseCallbackHook from "./components/UseCallbackHook";
@@ -19,6 +19,13 @@ import Cart from "./components/Interview/Cart";
 import StarWars2 from "./components/Interview/StarWars2";
 import Faq from "./components/HOC/Faq";
 import Pokemon2 from "./components/Interview/Pokemon2";
+import Faq2 from "./components/HOC/Faq2";
+import Forms from "./components/Interview/Forms";
+import ToDoApp from "./components/Apps/ToDoApp";
+import ColorApp from "./components/Apps/ColorApp";
+import Stopwatch from "./components/Apps/StopWatch";
+import TableData from "./components/Apps/TableData";
+import InfiniteScroll from "./components/Apps/InfiniteScroll";
 
 // let userData = {
 //   name: 'V.Sai Pujitha',
@@ -52,9 +59,17 @@ function App() {
         {/* <Pokemon /> */}
         {/* <Pokemon2 /> */}
         {/* <StarWars2 /> */}
-        <Cart />
+        {/* <Cart /> */}
         {/* <RickAndMortyApp/> */}
-        {/* <Faq /> */}
+        {/* <Faq />
+        <Faq2 /> */}
+        {/* <Forms /> */}
+        {/* <ToDoApp /> */}
+        {/* <ColorApp /> */}
+        {/* <Stopwatch />
+        <TableData /> */}
+        {/* <Forms/> */}
+        <InfiniteScroll />
       </div>
     </LoginDataContext>
 

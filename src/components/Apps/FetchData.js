@@ -23,30 +23,22 @@
 // export default FetchData;
 
 import React, { useEffect, useState } from "react";
-import UseDebounce from "./CustomeHooks/UseDebounce";
-
-// const useDebounce = (value, delay) => {
-//   const [debouncedValue, setDebouncedValue] = useState(value);
-
-//   useEffect(() => {
-//     const handler = setTimeout(() => setDebouncedValue(value), delay);
-
-//     return () => clearTimeout(handler);
-//   }, [value, delay]);
-
-//   return debouncedValue;
-// };
+import UseDebounce from "../CustomeHooks/UseDebounce";
 
 const FetchData = () => {
   const [data, setData] = useState();
   const [searchText, setSearchText] = useState("");
   useEffect(() => {
-    const fetchingUsers = async () => {
-      let apiData = await fetch("https://jsonplaceholder.typicode.com/users");
-      let jsonData = await apiData.json();
-      setData(jsonData);
-    };
-    fetchingUsers();
+    // const fetchingUsers = async () => {
+    //   let apiData = await fetch("https://jsonplaceholder.typicode.com/users");
+    //   let jsonData = await apiData.json();
+    //   setData(jsonData);
+    // };
+    // fetchingUsers();
+
+   fetch("https://jsonplaceholder.typicode.com/users")
+      .then((res) => res.json())
+      .then((data) => setData(data));
   }, []);
   console.log(data);
 
